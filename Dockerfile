@@ -8,7 +8,7 @@ RUN pip install mysqlclient
 # Find which driver you need based on the analytics database
 # you want to connect to here:
 # https://superset.apache.org/docs/databases/installing-database-drivers
-RUN pip install sqlalchemy-redshift && pip install pydruid && pip install pyhive \
+RUN pip install typing-extensions && pip install sqlalchemy-redshift && pip install pydruid && pip install pyhive \
   && pip install sqlalchemy-solr && pip install clickhouse-driver==0.2.0 && pip install clickhouse-sqlalchemy==0.1.6 \
   && pip install psycopg2-binary && pip install snowflake-sqlalchemy	
 
